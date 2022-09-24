@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Com Ga Le Trang</title>
+    <link rel="stylesheet" type="text/css" href="./css./style.css" />
+</head>
+<body>
+    <header><img src="./images/logo.jpg" alt="Com Ga Le Trang Logo" /> </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Trang Chủ</a></li>
+            <li><a href="./order.html">Đặt Hàng</a></li>
+            <li><a href="./nutrition.html">Dinh Dưỡng</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form id="info" action="/info/" method="post">
+            <h2>Thông tin đặt hàng</h2>
+            <fieldset>
+                <legend>Thông tin người mua</legend>                
+                <ul>
+                    <li class="form-control">
+                        <label for="name">Tên người nhận: <br> </label>
+                        <input type="text" id="name" name="name" placeholder="Nhập tên người nhận"/>
+                        <small class="message"></small>
+                    </li>
+
+                    <li class="form-control">
+                        <label for="phone">Số điện thoại:<br> </label>
+                        <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại"/>
+                        <small class="message"></small>
+                    </li>
+
+                    <li class="form-control">Địa chỉ: <br>
+                        <textarea id="address" name="address" rows="0" cols="0" placeholder="Nhập địa chỉ nhận hàng"></textarea>
+                        <small class="message"></small>
+                    </li>
+
+                    <li><label for="note">Ghi chú: <br> </label>
+                    <input type="text" id="note" name="note"/> 
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Món chính (25000 VND) </legend>
+                <ul>
+                    <li><label><input type="radio" name="foodmain" value="Cơm gà chiên xù" />Cơm gà chiên xù</label></li>
+                    <li><label><input type="radio" name="foodmain" value="Cơm gà nướng tỏi" />Cơm gà nướng tỏi</label></li>
+                    <li><label><input type="radio" name="foodmain" value="Cơm gà sốt thái" />Cơm gà sốt thái</label></li>
+                    <li><label><input type="radio" name="foodmain" value="Cơm gà nướng tiêu xanh" />Cơm gà nướng tiêu xanh</label></li>
+                    <li><label><input type="radio" name="foodmain" value="Gà không cơm" />Gà không cơm</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Món phụ (5000 VND) </legend>
+                <ul>
+                    <li><label><input type="checkbox" name="extra" value="Cơm thêm" />Cơm thêm</label></li>
+                    <li><label><input type="checkbox" name="extra" value="Salad cầu vòng" />Salad cầu vòng</label></li>
+                    <li><label><input type="checkbox" name="extra" value="Soup gà bắp non" />Soup gà bắp non</label></li>
+                    <li><label><input type="checkbox" name="extra" value="Trà chanh" />Trà chanh</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Thành tiền</legend>
+                <div class="form-control">
+                    <p id="cost">VND</p>
+                    <small class="message"></small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <input type="submit" id="submit" value="Đặt hàng !"/>
+                <input type="reset" id="reset" value="Reset"/>
+            </fieldset>
+        </form>
+        
+    </main>
+        <script src="./js/script.js"></script>
+    <footer>
+        <div id="copyright">
+            <p>&copy; Copyright 2021.<br> Liên hệ công việc: 
+            <a href="mailto:comgaletrang@gmail.com"> comgaletrang@gmail.com </a></p>
+            Cao Như Thuần - B1906580
+        </div>
+
+        <div id="social">
+            <p>Connect with us:</p>
+            <p><a href="https://www.facebook.com/comgaletrang"><img src="./images/fblogo.png" alt="Facebook logo"></a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
